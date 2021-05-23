@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lacerda.thiago.apostak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.lacerda.thiago.apostak.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.JogoActivity"
+            android:label=""
+            android:parentActivityName="com.lacerda.thiago.apostak.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lacerda.thiago.apostak.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.LoginActivity"
+            android:label="@string/action_sign_in_short"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.RegisterActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.ApostaActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.JogosUsuarioActivity"
+            android:label=""
+            android:parentActivityName="com.lacerda.thiago.apostak.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.InitialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.ConfrontoActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lacerda.thiago.apostak.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.ConfrontoEditActivity"
+            android:label=""
+            android:parentActivityName="com.lacerda.thiago.apostak.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lacerda.thiago.apostak.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.ConfrontoCreateActivity"
+            android:label=""
+            android:parentActivityName="com.lacerda.thiago.apostak.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lacerda.thiago.apostak.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.UsuarioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.ApostasDoUsuarioActivity"
+            android:label=""
+            android:parentActivityName="com.lacerda.thiago.apostak.UsuarioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lacerda.thiago.apostak.UsuarioActivity" />
+        </activity>
+        <activity
+            android:name="com.lacerda.thiago.apostak.RodadaEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.ConfiguracaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.RodadaActivity"
+            android:label="Selecione uma Rodada"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lacerda.thiago.apostak.ClassificacaoActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.lacerda.thiago.apostak.PendenciaActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
